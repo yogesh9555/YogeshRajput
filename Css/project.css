@@ -114,8 +114,8 @@
     
     @media only screen and (max-width: 700px) {
         #container {
-            width: 300px;
-            height: 400px;
+            width: 100%;
+            height: 550px;
             background-color: #eaedef;
             margin: 0 auto;
             top: 20px;
@@ -151,12 +151,10 @@
             color: black;
         }
         #history {
-            height: 200px;
-        }
-        #history {
             margin: 0 10px;
             font-size: 15px;
             color: #919191;
+            height: 200px;
         }
         .operator,
         .number,
@@ -169,6 +167,7 @@
             border-width: 0;
             font-weight: bold;
             font-size: 10px;
+            color: none;
         }
         button:nth-child(4) {
             font-size: 5px;
@@ -196,5 +195,9 @@
         }
         .navbar-toggler {
             color: black;
+        }
+        .number,
+        .empty {
+            background-color: #eaedef;
         }
     }
