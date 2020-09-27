@@ -1,191 +1,200 @@
-body {
-    background-color: black;
-    font-family: 'Open Sans', sans-serif;
-}
-
-#container {
-    width: 1000px;
-    height: 550px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/Assete/bgImg.jpg);
-    margin: 20px auto;
-}
-
-#calculator {
-    width: 320px;
-    height: 500px;
-    background-color: #eaedef;
-    margin: 0 auto;
-    top: 20px;
-    position: relative;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-#name {
-    color: black;
-    font-weight: bold;
-    text-align: center;
-    font-size: 15px;
-}
-
-#result {
-    height: 120px;
-}
-
-#history {
-    text-align: right;
-    height: 20px;
-    margin: 0 20px;
-    padding-top: 20px;
-    font-size: 15px;
-    color: #919191;
-}
-
-#output {
-    text-align: right;
-    height: 60px;
-    margin: 10px 20px;
-    font-size: 30px;
-    color: black;
-    font-weight: bold;
-}
-
-#keyboard {
-    height: 400px;
-}
-
-.operator,
-.number,
-.empty {
-    width: 50px;
-    height: 40px;
-    margin: 15px;
-    float: left;
-    border-radius: 50%;
-    border-width: 0;
-    font-weight: bold;
-    font-size: 15px;
-}
-
-.number,
-.empty {
-    background-color: #eaedef;
-}
-
-.operator,
-.number {
-    cursor: pointer;
-}
-
-.operator:active,
-.number:active {
-    font-size: 13px;
-}
-
-.operator:focus,
-.number:focus,
-.empty:focus {
-    outline: 0;
-}
-
-button:nth-child(4) {
-    font-size: 20px;
-    background-color: #20b2aa;
-}
-
-button:nth-child(8) {
-    font-size: 20px;
-    background-color: #ffa500;
-}
-
-button:nth-child(12) {
-    font-size: 20px;
-    background-color: #f08080;
-}
-
-button:nth-child(16) {
-    font-size: 20px;
-    background-color: #7d93e0;
-}
-
-button:nth-child(20) {
-    font-size: 20px;
-    background-color: #9477af;
-}
-
-@media only screen and (max-width: 700px) {
+    body {
+        background-color: black;
+        font-family: 'Open Sans', sans-serif;
+    }
+    
     #container {
-        width: 300px;
-        height: 400px;
-        background-color: #eaedef;
-        margin: 0 auto;
-        top: 20px;
-        position: relative;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        width: 1000px;
+        height: 550px;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/Assete/bgImg.jpg);
+        margin: 20px auto;
     }
+    
     #calculator {
-        width: 180px;
-        height: 350px;
+        width: 320px;
+        height: 500px;
         background-color: #eaedef;
         margin: 0 auto;
         top: 20px;
         position: relative;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
-    #calculator p {
+    
+    #name {
         color: black;
         font-weight: bold;
         text-align: center;
-        font-size: 10px;
+        font-size: 15px;
     }
+    
+    #result {
+        height: 120px;
+    }
+    
+    #history {
+        text-align: right;
+        height: 20px;
+        margin: 0 20px;
+        padding-top: 20px;
+        font-size: 15px;
+        color: #919191;
+    }
+    
     #output {
         text-align: right;
-        height: 30px;
-        margin: 5px 10px;
+        height: 60px;
+        margin: 10px 20px;
         font-size: 30px;
         color: black;
         font-weight: bold;
     }
-    #keyboard,
-    #history {
-        height: 200px;
+    
+    #keyboard {
+        height: 400px;
     }
+    
     .operator,
     .number,
     .empty {
-        width: 15px;
-        height: 10px;
+        width: 50px;
+        height: 40px;
         margin: 15px;
         float: left;
         border-radius: 50%;
         border-width: 0;
         font-weight: bold;
-        font-size: 10px;
+        font-size: 15px;
     }
-    button:nth-child(4) {
-        font-size: 5px;
-        background-color: #20b2aa;
+    
+    .number,
+    .empty {
+        background-color: #eaedef;
     }
-    button:nth-child(8) {
-        font-size: 5px;
-        background-color: #ffa500;
-    }
-    button:nth-child(12) {
-        font-size: 5px;
-        background-color: #f08080;
-    }
-    button:nth-child(16) {
-        font-size: 5px;
-        background-color: #7d93e0;
-    }
-    button:nth-child(20) {
-        font-size: 5px;
-        background-color: #9477af;
-    }
+    
     .operator,
     .number {
         cursor: pointer;
     }
-    .navbar-toggler {
-        color: black;
+    
+    .operator:active,
+    .number:active {
+        font-size: 13px;
     }
-}
+    
+    .operator:focus,
+    .number:focus,
+    .empty:focus {
+        outline: 0;
+    }
+    
+    button:nth-child(4) {
+        font-size: 20px;
+        background-color: #20b2aa;
+    }
+    
+    button:nth-child(8) {
+        font-size: 20px;
+        background-color: #ffa500;
+    }
+    
+    button:nth-child(12) {
+        font-size: 20px;
+        background-color: #f08080;
+    }
+    
+    button:nth-child(16) {
+        font-size: 20px;
+        background-color: #7d93e0;
+    }
+    
+    button:nth-child(20) {
+        font-size: 20px;
+        background-color: #9477af;
+    }
+    
+    @media only screen and (max-width: 700px) {
+        #container {
+            width: 300px;
+            height: 400px;
+            background-color: #eaedef;
+            margin: 0 auto;
+            top: 20px;
+            position: relative;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        #calculator {
+            width: 180px;
+            height: 350px;
+            background-color: #eaedef;
+            margin: 0 auto;
+            top: 20px;
+            position: relative;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        #name {
+            color: black;
+            font-weight: bold;
+            text-align: center;
+            font-size: 10px;
+        }
+        #output {
+            text-align: right;
+            height: 60px;
+            margin: -135px 0px;
+            font-size: 15px;
+            color: black;
+            font-weight: bold;
+        }
+        #result {
+            height: 120px;
+            font-size: 15px;
+            color: black;
+        }
+        #history {
+            height: 200px;
+        }
+        #history {
+            margin: 0 10px;
+            font-size: 15px;
+            color: #919191;
+        }
+        .operator,
+        .number,
+        .empty {
+            width: 15px;
+            height: 10px;
+            margin: 15px;
+            float: left;
+            border-radius: 50%;
+            border-width: 0;
+            font-weight: bold;
+            font-size: 10px;
+        }
+        button:nth-child(4) {
+            font-size: 5px;
+            background-color: #20b2aa;
+        }
+        button:nth-child(8) {
+            font-size: 5px;
+            background-color: #ffa500;
+        }
+        button:nth-child(12) {
+            font-size: 5px;
+            background-color: #f08080;
+        }
+        button:nth-child(16) {
+            font-size: 5px;
+            background-color: #7d93e0;
+        }
+        button:nth-child(20) {
+            font-size: 5px;
+            background-color: #9477af;
+        }
+        .operator,
+        .number {
+            cursor: pointer;
+        }
+        .navbar-toggler {
+            color: black;
+        }
+    }
