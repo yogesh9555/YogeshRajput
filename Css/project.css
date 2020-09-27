@@ -8,7 +8,6 @@ body {
     height: 550px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/Assete/bgImg.jpg);
     margin: 20px auto;
-    top: -10px;
 }
 
 #calculator {
@@ -21,7 +20,7 @@ body {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-#calculator p {
+#name {
     color: black;
     font-weight: bold;
     text-align: center;
